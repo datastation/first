@@ -43,7 +43,6 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-        alert('prvi');
         
         
         window.plugin.notification.local.add({
@@ -53,7 +52,6 @@ var app = {
 											repeat:     'minutely',  // Either 'secondly', 'minutely', 'hourly', 'daily', 'weekly', 'monthly' or 'yearly'
 											badge:      12  // Displays number badge to notification
 										});
-		alert('drugi');
         console.log('Received Event: ' + id);
     }
 };
