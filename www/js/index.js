@@ -53,7 +53,7 @@ var app = {
 											badge:      12  // Displays number badge to notification
 										});
 
-        //console.log('Received Event: ' + id);
+        console.log('Received Event: ' + id);
     }
 };
 
