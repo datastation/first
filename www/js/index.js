@@ -43,6 +43,7 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        console.log('daaaaaaaaaaa');
         
         /*
         window.plugin.notification.local.add({
