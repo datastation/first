@@ -43,17 +43,17 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-        console.log('daaaaaaaaaaa');
+        alert.log('prvi');
         
-        /*
+        
         window.plugin.notification.local.add({
 											id:         'not_4',  // A unique id of the notifiction
 											message:    'Evo Notifikacije !!!',  // The message that is displayed
 											title:      'Naslov',  // The title of the message
 											repeat:     'minutely',  // Either 'secondly', 'minutely', 'hourly', 'daily', 'weekly', 'monthly' or 'yearly'
 											badge:      12  // Displays number badge to notification
-										});*/
-
+										});
+		alert.log('drugi');
         console.log('Received Event: ' + id);
     }
 };
