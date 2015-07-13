@@ -49,7 +49,7 @@ var app = {
 											message:    'Evo Notifikacije !!!',  // The message that is displayed
 											title:      'Naslov',  // The title of the message
 											repeat:     'minutely',  // Either 'secondly', 'minutely', 'hourly', 'daily', 'weekly', 'monthly' or 'yearly'
-											sound: 		"file://mnt/sdcard/Zagrli.mp3",
+											//sound: 		"file://mnt/sdcard/Zagrli.mp3",
 											badge:      12  // Displays number badge to notification
 										});
 
