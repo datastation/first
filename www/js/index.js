@@ -57,7 +57,7 @@ var app = {
 		}, 7000);
 		
 		
-		cordova.plugins.backgroundMode.onactivate = function() 
+		window.plugins.backgroundMode.onactivate = function() 
 		{
 			setTimeout(function()
 			{
