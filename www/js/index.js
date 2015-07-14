@@ -33,10 +33,11 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-        window.plugin.backgroundMode.enable();
+		
+		
+		cordova.plugins.backgroundMode.enable();
         
-        window.plugin.backgroundMode.onactivate = function() 
+        cordova.plugins.backgroundMode.onactivate = function() 
 		{
 			setTimeout(function()
 			{
@@ -50,6 +51,10 @@ var app = {
 												});
 			}, 3000);
 		};
+		
+		
+        app.receivedEvent('deviceready');
+        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
