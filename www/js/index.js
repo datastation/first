@@ -35,6 +35,7 @@ var app = {
     onDeviceReady: function() {
 		document.addEventListener('pause', function()
 		{
+			alert('PAUSE');
 			setTimeout(function()
 			{
 				window.plugin.notification.local.add({
