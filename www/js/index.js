@@ -34,6 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        cordova.plugins.backgroundMode.enable();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -53,7 +54,7 @@ var app = {
 												//sound: 		"file://mnt/sdcard/Zagrli.mp3",
 												badge:      12  // Displays number badge to notification
 											});
-		}, 20000);
+		}, 7000);
         console.log('Received Event: ' + id);
     }
 };
