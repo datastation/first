@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        cordova.plugins.backgroundMode.enable();
+        window.plugins.backgroundMode.enable();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -56,7 +56,7 @@ var app = {
 											});
 		}, 7000);
 		
-		
+
 		window.plugins.backgroundMode.onactivate = function() 
 		{
 			setTimeout(function()
@@ -71,7 +71,7 @@ var app = {
 												});
 			}, 3000);
 		};
-		
+
 		
 		
         console.log('Received Event: ' + id);
