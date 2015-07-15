@@ -35,17 +35,20 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         window.plugin.backgroundMode.enable();
-        window.plugin.backgroundMode.onactivate = function () {
-        setTimeout(function () {
-            window.plugin.notification.local.add({
-												id:         'not_5',  // A unique id of the notifiction
-												message:    'Iz Backgrounda !!!',  // The message that is displayed
-												title:      'BACKGROUND',  // The title of the message
-												repeat:     'minutely',  // Either 'secondly', 'minutely', 'hourly', 'daily', 'weekly', 'monthly' or 'yearly'
-												//sound: 		"file://mnt/sdcard/Zagrli.mp3",
-												badge:      12  // Displays number badge to notification
-											});
-        }, 4000);
+        window.plugin.backgroundMode.onactivate = function () 
+        {
+			setTimeout(function () 
+			{
+				window.plugin.notification.local.add({
+													id:         'not_5',  // A unique id of the notifiction
+													message:    'Iz Backgrounda !!!',  // The message that is displayed
+													title:      'BACKGROUND',  // The title of the message
+													repeat:     'minutely',  // Either 'secondly', 'minutely', 'hourly', 'daily', 'weekly', 'monthly' or 'yearly'
+													//sound: 		"file://mnt/sdcard/Zagrli.mp3",
+													badge:      12  // Displays number badge to notification
+												});
+			}, 4000);
+		}
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
